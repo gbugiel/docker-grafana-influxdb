@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker rm wk/grafana-influxdb:latest
+docker rmi -f wk/grafana-influxdb:latest
+docker build -t wk/grafana-influxdb:latest .

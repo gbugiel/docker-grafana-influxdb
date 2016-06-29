@@ -1,0 +1,5 @@
+#!/bin/bash
+
+CONTAINER_ID=$(docker ps | grep wk/grafana-influxdb | awk '{print $1}')
+
+docker exec -it ${CONTAINER_ID} bash

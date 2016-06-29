@@ -1,0 +1,6 @@
+#!/bin/bash
+
+CONTAINER_ID=$(docker ps | grep wk/grafana-influxdb | awk '{print $1}')
+
+docker stop ${CONTAINER_ID}
+docker rm ${CONTAINER_ID}

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker stop wk/grafana-influxdb:latest
+docker rm wk/grafana-influxdb:latest
+
+docker run -d -p 80:80 -p 8083:8083 -p 8086:8086 wk/grafana-influxdb:latest
