@@ -4,6 +4,9 @@ docker-grafana-influxdb
 This image contains a default configuration of InfluxDB and Grafana.
 It explicitly doesn't bundle an example dashboard.
 
+* [Grafana](http://grafana.org/)
+* [InfluxDB](https://influxdata.com/time-series-platform/influxdb/)
+
 ### Using the Dashboard ###
 
 Once your container is running all you need to do is open your browser pointing to the host / port you just published and play with the dashboard at your wish.
